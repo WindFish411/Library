@@ -7,8 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <dialog id="dialog">
+    <div class="pageContainer">
+
+
+    <div class="header">
+      <p>Welcome to Your Personal Library! Shh!</p>
+    </div>
+
+     <div class="buttonContainer">
+        <button id="showDialog">Submit a Book</button>
+        <button class="display" id="display">Display Library</button>
+    </div>
+
+
+    <div class="container" id="container"></div>
+
+
+
+      <dialog id="dialog">
         <form id="bookForm">
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title"><br><br>
@@ -31,24 +47,9 @@
                 <input type="submit" id="close" value="Close" />
               </div>
           </form>
+        </dialog>
+    </div>
     
-      </dialog>
-      <p>
-        <button id="showDialog">Submit a Book</button>
-      </p>
-      <output></output>
-
-      <p></p>
-      
-      <button class="display" id="display">Display Library</button>
-
-      <div class="container" id="container">
-
-
-      </div>
-
-      <p></p>
-
 <script src="script.js"></script>
 </body>
 </html>

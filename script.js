@@ -38,6 +38,7 @@ document.getElementById("bookForm").addEventListener("submit", function(event) {
 
 //Library Display
 document.getElementById("display").addEventListener("click", function(){
+    container.innerHTML = '';
 
     for(let i=0; i<myLibrary.length; i++){
       let book = myLibrary[i];
@@ -73,10 +74,8 @@ document.getElementById("display").addEventListener("click", function(){
 
       cardDiv.appendChild(toggleHasRead);
 
-      Book.prototype.hasRead = book.hasRead;
+      Book.prototype.hasRead = book.hasRead; 
       toggleHasRead.addEventListener("click", function(){
-          
-
           if(Book.prototype.hasRead === "yes"){
             Book.prototype.hasRead = "no";
             hasReadSection.textContent = "Have you read this book?: " + Book.prototype.hasRead ;
