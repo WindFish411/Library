@@ -73,7 +73,10 @@ document.getElementById("display").addEventListener("click", function(){
 
       cardDiv.appendChild(toggleHasRead);
 
+      Book.prototype.hasRead = book.hasRead;
       toggleHasRead.addEventListener("click", function(){
+          
+
           if(Book.prototype.hasRead === "yes"){
             Book.prototype.hasRead = "no";
             hasReadSection.textContent = "Have you read this book?: " + Book.prototype.hasRead ;
